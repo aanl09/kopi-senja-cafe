@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kopi Senja Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Kopi Senja</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Fresh coffee, slow evening</p>
+        <h1>Warm coffee for calm days.</h1>
+        <p class="subtitle">A cozy cafe landing page with a simple interactive order preview.</p>
+        <a class="button" href="#menu">See menu</a>
+      </div>
+      <div class="hero-card">
+        <span class="steam">☕</span>
+        <h2>Today’s Promo</h2>
+        <p>Buy 2 iced coffee, get 1 butter croissant free.</p>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <p class="eyebrow">Our favorites</p>
+      <h2>Menu</h2>
+      <div class="menu-grid">
+        <article class="menu-card" data-name="Espresso" data-price="18000">
+          <h3>Espresso</h3>
+          <p>Strong, bold, and simple.</p>
+          <strong>Rp18.000</strong>
+        </article>
+        <article class="menu-card" data-name="Kopi Susu Senja" data-price="25000">
+          <h3>Kopi Susu Senja</h3>
+          <p>House milk coffee with palm sugar.</p>
+          <strong>Rp25.000</strong>
+        </article>
+        <article class="menu-card" data-name="Matcha Latte" data-price="28000">
+          <h3>Matcha Latte</h3>
+          <p>Soft matcha with creamy milk.</p>
+          <strong>Rp28.000</strong>
+        </article>
+        <article class="menu-card" data-name="Caramel Macchiato" data-price="32000">
+          <h3>Caramel Macchiato</h3>
+          <p>Sweet caramel, espresso, and milk foam.</p>
+          <strong>Rp32.000</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="order" class="section order-section">
+      <div>
+        <p class="eyebrow">Quick order</p>
+        <h2>Build your order</h2>
+        <p class="muted">Choose a drink and generate a simple order summary.</p>
+      </div>
+      <form id="orderForm" class="order-card">
+        <label>Name
+          <input id="customerName" type="text" placeholder="Your name" required />
+        </label>
+        <label>Drink
+          <select id="drinkSelect"></select>
+        </label>
+        <label>Quantity
+          <input id="quantity" type="number" min="1" value="1" required />
+        </label>
+        <button type="submit">Create summary</button>
+        <output id="summary">Your order summary will appear here.</output>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Visit us</p>
+      <h2>Jl. Kopi Senja No. 17</h2>
+      <p>Open daily, 08:00 - 22:00</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Kopi Senja Cafe. Built with AI assistance.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
